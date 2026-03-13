@@ -8,4 +8,8 @@ void main() {
 
     RegistrazioneAudio registrazioneAudio = new RegistrazioneAudio("Prova", 3, 4);
     registrazioneAudio.play();
+    registrazioneAudio.abbassaVolume();
+    registrazioneAudio.play();
+    registrazioneAudio.alzaVolume();
+    registrazioneAudio.play();
 }
