@@ -35,5 +35,20 @@ void main() {
     immagine.diminuisciLuminosità();
     immagine.show();
 
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("\nPremere '1' per invocare un'immagine; premere '2' per invocare un video; premere '3' per invocare una registrazione audio");
+
+    int tastoPremuto = Integer.parseInt(scanner.nextLine());
+    
+    if (tastoPremuto == 1) {
+        immagine.show();
+    } else if (tastoPremuto == 2) {
+        video.play();
+    } else if (tastoPremuto == 3) {
+        registrazioneAudio.play();
+    } else {
+        System.out.println("Il numero selezionato non è valido");
+    }
+
 
 }
